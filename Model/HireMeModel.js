@@ -10,7 +10,8 @@ const HireMeModel = mongoose.Schema({
     },
     date:{
         type: Date,
-        required: true
+        required: true,
+        set: (value) => new Date(value.toISOString().split('T')[0])
     },
     price:{
         type: Number,
