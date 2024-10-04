@@ -8,7 +8,7 @@ const cors = require('cors')
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb://localhost:27017/BakarPortfolio").then(() => {
+mongoose.connect("mongodb+srv://abuukarmuuri2018:Bakar12Som@bakarportfolio.rrb0l.mongodb.net/?retryWrites=true&w=majority&appName=BakarPortfolio").then(() => {
     console.log('Database is Connected to MongoDB')
 }).catch((error) => {
     console.error('Error connecting to MongoDB:', error)
